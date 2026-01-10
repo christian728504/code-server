@@ -1,2 +1,0 @@
-# Moving away from `code-server`
-This version of the bioinformatics:code-server images was deprecated since the running `code-server` and connecting with ssh tunneling was more cumbersome than using the vscode CLI (`code`) to create a tunnel and manage authentication through Github. Further more, the `code tunnel` method can be accessed via the vscode IDE on the client, whereas the `code-server` method could only be accessed via a browser.

@@ -1,5 +1,5 @@
 # Use an Ubuntu base image for compatibility
-FROM clarity001/bioinformatics:base
+FROM clarity001/bioinformatics:latest
 
 # Install vscode CLI
 RUN curl -Lk 'https://code.visualstudio.com/sha/download?build=stable&os=cli-alpine-x64' --output vscode_cli.tar.gz && \
