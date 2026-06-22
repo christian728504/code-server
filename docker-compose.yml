@@ -1,8 +1,10 @@
 services:
   code-server:
-    # build: .
-    image: clarity001/bioinformatics:code-server
-    working_dir: /data/zusers/$USER
+    build:
+      context: .
+      args:
+        USERNAME: ${USER:?USER must be set}
+    working_dir: /data/zusers/${USER:?USER must be set}
     container_name: code-server
     environment:
       - TZ="America/New_York"
